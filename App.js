@@ -9,6 +9,7 @@
 import React, {Component} from 'react';
 import {Platform, StyleSheet, Text, View} from 'react-native';
 import { RNLockScreen } from 'react-native-lock-screen';
+import { Calculator } from 'react-native-calculator'
 
 const instructions = Platform.select({
   ios: 'Press Cmd+R to reload,\n' + 'Cmd+D or shake for dev menu',
@@ -22,12 +23,22 @@ export default class App extends Component<Props> {
   render() {
     return (
       <View style={styles.container}>
-        <RNLockScreen type={RNLockScreen.Type.Pattern} mode={RNLockScreen.Mode.Verify} onCapture={lock => {
+        {/* <RNLockScreen type={RNLockScreen.Type.Pattern} mode={RNLockScreen.Mode.Verify} onCapture={lock => {
           console.log("lock: " + lock)
           }} onVerified={() => {
             console.log('lock verified')
           }}
           lock={'123'}
+        /> */}
+        <Calculator
+          style={{ 
+            flexGrow: 1,
+          justifyContent: 'center',
+          alignItems: 'center'
+           }}
+          onTextChange={text => {
+            console.log(text)
+          }}
         />
       </View>
     );
