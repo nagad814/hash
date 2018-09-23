@@ -3,6 +3,9 @@ package com.hash;
 import android.app.Application;
 
 import com.facebook.react.ReactApplication;
+import ui.toasty.RNToastyPackage;
+import com.oblador.vectoricons.VectorIconsPackage;
+import com.horcrux.svg.SvgPackage;
 import ui.lockscreen.RNLockScreenPackage;
 import com.facebook.react.ReactNativeHost;
 import com.facebook.react.ReactPackage;
@@ -24,6 +27,9 @@ public class MainApplication extends Application implements ReactApplication {
     protected List<ReactPackage> getPackages() {
       return Arrays.<ReactPackage>asList(
           new MainReactPackage(),
+            new RNToastyPackage(),
+            new VectorIconsPackage(),
+            new SvgPackage(),
             new RNLockScreenPackage()
       );
     }

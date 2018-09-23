@@ -8,7 +8,7 @@
 
 import React, {Component} from 'react';
 import {Platform, StyleSheet, Text, View} from 'react-native';
-import RNLockScreen from 'react-native-lock-screen';
+import { RNLockScreen } from 'react-native-lock-screen';
 
 const instructions = Platform.select({
   ios: 'Press Cmd+R to reload,\n' + 'Cmd+D or shake for dev menu',
@@ -22,9 +22,10 @@ export default class App extends Component<Props> {
   render() {
     return (
       <View style={styles.container}>
-        <RNLockScreen type={RNLockScreen.Type.Pin} mode={RNLockScreen.Mode.Capture} onCapture={lock => {
+        <RNLockScreen type={RNLockScreen.Type.Pattern} mode={RNLockScreen.Mode.Verify} onCapture={lock => {
+          console.log("lock: " + lock)
           }} onVerified={() => {
-
+            console.log('lock verified')
           }}
           lock={'123'}
         />
@@ -36,9 +37,6 @@ export default class App extends Component<Props> {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-    backgroundColor: '#F5FCFF',
   },
   welcome: {
     fontSize: 20,
