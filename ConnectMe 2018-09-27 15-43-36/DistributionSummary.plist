@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>ConnectMe.ipa</key>
+	<array>
+		<dict>
+			<key>architectures</key>
+			<array>
+				<string>armv7</string>
+				<string>arm64</string>
+			</array>
+			<key>certificate</key>
+			<dict>
+				<key>SHA1</key>
+				<string>1A82D8C2DABB888C1C4165F77C21306B1D7C088F</string>
+				<key>dateExpires</key>
+				<string>15/06/19</string>
+				<key>type</key>
+				<string>iOS Distribution</string>
+			</dict>
+			<key>embeddedBinaries</key>
+			<array>
+				<dict>
+					<key>architectures</key>
+					<array>
+						<string>armv7</string>
+						<string>arm64</string>
+					</array>
+					<key>certificate</key>
+					<dict>
+						<key>SHA1</key>
+						<string>1A82D8C2DABB888C1C4165F77C21306B1D7C088F</string>
+						<key>dateExpires</key>
+						<string>15/06/19</string>
+						<key>type</key>
+						<string>iOS Distribution</string>
+					</dict>
+					<key>name</key>
+					<string>vcx.framework</string>
+					<key>team</key>
+					<dict>
+						<key>id</key>
+						<string>ES8QU3D2A4</string>
+						<key>name</key>
+						<string>EVERNYM, INC.</string>
+					</dict>
+				</dict>
+			</array>
+			<key>entitlements</key>
+			<dict>
+				<key>application-identifier</key>
+				<string>ES8QU3D2A4.com.evernym.connectme.callcenter</string>
+				<key>aps-environment</key>
+				<string>production</string>
+				<key>com.apple.developer.associated-domains</key>
+				<array>
+					<string>applinks:connectme.app.link</string>
+					<string>applinks:connectme-alternate.app.link</string>
+				</array>
+				<key>com.apple.developer.icloud-container-identifiers</key>
+				<array/>
+				<key>com.apple.developer.team-identifier</key>
+				<string>ES8QU3D2A4</string>
+				<key>com.apple.developer.ubiquity-kvstore-identifier</key>
+				<string>ES8QU3D2A4.com.evernym.connectme.callcenter</string>
+				<key>get-task-allow</key>
+				<false/>
+				<key>keychain-access-groups</key>
+				<array>
+					<string>ES8QU3D2A4.com.evernym.connectme.callcenter</string>
+				</array>
+			</dict>
+			<key>name</key>
+			<string>ConnectMe.app</string>
+			<key>profile</key>
+			<dict>
+				<key>UUID</key>
+				<string>f73b4872-4e4b-4827-9cd6-daa8e77d81b2</string>
+				<key>name</key>
+				<string>match AdHoc com.evernym.connectme.callcenter</string>
+			</dict>
+			<key>team</key>
+			<dict>
+				<key>id</key>
+				<string>ES8QU3D2A4</string>
+				<key>name</key>
+				<string>EVERNYM, INC.</string>
+			</dict>
+		</dict>
+	</array>
+</dict>
+</plist>
